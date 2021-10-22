@@ -31,3 +31,8 @@ engine = create_engine('postgresql://username:xxxxxxxxx@redshift-cluster-1.czayg
 data_frame = pd.read_sql('SELECT * FROM category;', engine)
 data_frame.to_csv("exported.csv",index=False)
 ```
+
+
+Ref
+
+- https://ayushbi.medium.com/import-aws-redshift-data-into-pandas-dataframe-ca3caace6df9
