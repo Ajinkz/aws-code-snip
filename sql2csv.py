@@ -10,10 +10,10 @@ import csv
 def lambda_handler(event, context):
 
     conn = psycopg2.connect(dbname='dev',
-                            host = 'redshift-cluster-1.czaygp0man3j.us-east-1.redshift.amazonaws.com',
+                            host = 'redshift-cluster-1.czaygp0mAn3j.us-east-1.redshift.amazonaws.com',
                             port = '5439',
                             user = 'awsuser',
-                            password = 'Awsuser123')
+                            password = 'Awsuser1234')
     cur = conn.cursor()
     query = '''
     select * from category
